@@ -1,0 +1,18 @@
+NAME: CHEN CHEN
+EMAIL: chenchenstudent@gmail.com
+ID: 004710308
+
+lab1b-client.c:
+source code for client;
+
+lab1b-client.c:
+source code for server;
+
+Makefile:
+Makefile has client to compile lab1b-client.c, and server to compile lab1b-client.c, and clean to clean trash, and dist to make tarball;
+
+my.key
+16 bytes key;
+
+README:
+describe the contents of the tarball.

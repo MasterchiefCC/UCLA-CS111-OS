@@ -1,0 +1,11 @@
+Total: 21 samples
+      12  57.1%  57.1%       13  61.9% spin_lock
+       4  19.0%  76.2%        4  19.0% __strcmp_sse42
+       3  14.3%  90.5%        5  23.8% SortedList_lookup
+       1   4.8%  95.2%        1   4.8% 0x00007ffe2dbf9aa0
+       1   4.8% 100.0%        3  14.3% SortedList_insert
+       0   0.0% 100.0%        1   4.8% __GI___clock_gettime
+       0   0.0% 100.0%       21 100.0% __clone
+       0   0.0% 100.0%       21 100.0% list_fun
+       0   0.0% 100.0%       21 100.0% list_interface
+       0   0.0% 100.0%       21 100.0% start_thread

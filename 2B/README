@@ -1,0 +1,40 @@
+NAME: CHEN CHEN
+EMAIL: chenchenstudent@gmail.com
+ID: 004710308
+
+QUESTION 2.3.1 - CPU time in the basic list implementation:
+Where do you believe most of the CPU time is spent in the 1 and 2-thread list tests ?
+1 threads: both mutex_lock and spin_lock spend most of on list operation, because there is no context switches between threads, and no critial area.
+
+
+2 threads mutex_lock: most of time spend on list operation too.
+2 threads spin_lock: most of time spend on dead loop of a thread, because OS will give same time with both thread, when both thread get into critial area, one is in dead loop, waiting another to unlock.
+
+Why do you believe these to be the most expensive parts of the code?
+The most expensive parts of code is list operation parts, it involve with lots of pointer which could cause I/O in disk, and slow down the process.
+Locking/Unlocking I have explain why it is expensive above.
+
+Where do you believe most of the CPU time is being spent in the high-thread spin-lock tests?
+Most of time will spend on dead loop (spinning) on those threads waiting get into critial area.
+Where do you believe most of the CPU time is being spent in the high-thread mutex tests?
+Most of time will spend on list operation, because of compare to spin_lock, mutex lock just does a atomic add and subtraction.
+
+
+QUESTION 2.3.2 - Execution Profiling:
+Most of time will spend on dead loop (spinning) on those threads waiting get into critial area.
+because waiting threads can't get into the critial area, and also have same time of execution time as the thread in critial area.
+As a result, in high threads condition, most of thread just waiting and spend as many time as the thread in execution.
+
+QUESTION 2.3.3 - Mutex Wait Time:
+Because the number of waiting threads increases which wait to get the lock and running into critial area,
+the time rise because the waiting threads trying to check whether the lock is available or not.
+
+Because the time cost of each thread complete the list operation is irrelevant with to the number of threads, 
+so the completion time per operation rise (less dramatically) with the number of contending threads.
+
+QUESTION 2.3.4 - Performance of Partitioned Lists
+The large number of threads and large number of lists in multiple CPU enironment, increases the performance, because it increases the paralleism of the whole process, different threads can manipulate different list which because it is in different list, it doesn't have critial area or confilt between threads.
+
+number of lists is further increased at the beginning the throughput increase, however, if the number of lists increase the a point that there are not enough threads the multiple list operations, it will begin to decrease the throughput.
+
+Because a single list with 1/N times wouldn't spend so many time on lock and unlock than N-way partitioned list, this would not happen.

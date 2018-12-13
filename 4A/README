@@ -1,0 +1,18 @@
+NAME: CHEN CHEN
+EMAIL: chenchenstudent@gmail.com
+ID: 004710308
+
+BeagleBone Green Wireless rev GW1A S/N BBGW18031137
+MAC: 2CF4F1067870
+
+connected.png:
+from a USB terminal command session connected to your system, showing that you gave it a name and configured network access.
+
+copy.png:
+from a local session in which you copy a hello world program from your laptop/desktop to your Beaglebone.
+
+build_run.png:
+from a WIFI SSH session in which you build and run a trivial (hello world) program.
+
+git.png:
+from a WIFI SSH session in which you install git and clone a repository.

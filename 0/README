@@ -1,0 +1,41 @@
+#Project0 introdtuction file  
+##student info  
+NAME: CHENCHEN  
+EMAIL: chenchenstudent@gmail.com  
+ID: 004710308  
+##Makefile  
+###Usage  
+```shell
+make
+#creat a excutable file lab0
+make clean
+#clean all file created by Makefile
+#keep the lab0.c, bracktrace.png, and Makefile
+make check
+#run smoke test
+```
+
+###smoke test
+```shell
+make check_one
+```
+check the program will exit with code 1, if error arguments.  
+```shell
+make check_two
+```
+```shell
+make check_one
+```
+check the program will exit with code 2, if error in input file.
+```shell
+make check_three
+```
+check the program will exit with code 3, if error in output file.
+```shell
+make check_pass
+```
+check the program will exit with code 0, if no error happened.
+
+
+
+

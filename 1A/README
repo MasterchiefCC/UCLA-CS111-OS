@@ -1,0 +1,30 @@
+NAME: CHEN CHEN
+EMAIL: chenchenstudent@gmail.com
+ID: 004710308
+
+#include <errno.h>
+errno.h is a header file in the standard library of the C programming language. It defines macros for reporting and retrieving error conditions through error codes stored in a static memory location called errno (short for "error number").
+#include <fcntl.h>
+The <fcntl.h> header shall define the following requests and arguments for use by the functions fcntl() and open().
+#include <getopt.h>
+getopt is a C library function used to parse command-line options.
+#include <signal.h>
+signal processing defines how a program handles various signals while it executes. A signal can report some exceptional behavior within the program (such as division by zero), or a signal can report some asynchronous event outside the program.
+#include <stdio.h>
+provides many standard library functions for file input and output.
+#include <stdlib.h>
+The C standard library or libc is the standard library for the C programming language, as specified in the ANSI C standard.[1] It was developed at the same time as the C library POSIX specification, which is a superset of it.[2][3] Since ANSI C was adopted by the International Organization for Standardization,[4] the C standard library is also called the ISO C library.
+#include <string.h>
+The C programming language has a set of functions implementing operations on strings (character strings and byte strings) in its standard library. Various operations, such as copying, concatenation, tokenization and searching are supported. For character strings, the standard library uses the convention that strings are null-terminated: a string of n characters is represented as an array of n + 1 elements, the last of which is a "NUL" character.
+#include <sys/ioctl.h>
+ioctl (an abbreviation of input/output control) is a system call for device-specific input/output operations and other operations which cannot be expressed by regular system calls
+#include <sys/poll.h>
+provides Asynchronous I/O
+#include <sys/types.h>
+provides data types 
+#include <sys/wait.h>
+provides waitpid()
+#include <termios.h>
+The <termios.h> header shall contain the definitions used by the terminal I/O interfaces
+#include <unistd.h>
+unistd.h is the name of the header file that provides access to the POSIX operating system API. It is defined by the POSIX.1 standard, the base of the Single Unix Specification, and should therefore be available in any conforming (or quasi-conforming) operating system/compiler.
